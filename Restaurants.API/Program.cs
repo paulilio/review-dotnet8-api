@@ -19,8 +19,6 @@ builder.Services.AddInfrastructure(builder.Configuration);
 //Necessary Types to the Dependency Injection Container (so API can run using controllers.
 builder.Services.AddControllers();
 
-builder.Services.AddScoped<IWeatherForecastService, WeatherForecastService>();
-
 var app = builder.Build();
 
 //Run seeding automatically
