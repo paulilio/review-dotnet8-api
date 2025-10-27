@@ -29,4 +29,7 @@ Each module represents a focused topic (e.g., DI, DTOs, FluentValidation, EF Cor
 
 ---
 
+## Final Project
+
+<img width="740" height="534" alt="image" src="https://github.com/user-attachments/assets/4a4e1196-bbf4-4886-ac25-608c167c3b3a" />
 
