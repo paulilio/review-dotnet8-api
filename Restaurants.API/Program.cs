@@ -3,6 +3,7 @@
 //How the HTTP request pipeline will look like
 
 using Restaurants.API.Controllers;
+using Restaurants.Application.Extensions;
 using Restaurants.Infrastructure.Extensions;
 using Restaurants.Infrastructure.Seeders;
 
@@ -12,8 +13,10 @@ builder.Configuration
     .SetBasePath(Directory.GetCurrentDirectory())
     .AddEnvironmentVariables();
 
-// Add Infrastructure
-builder.Services.AddInfrastructure(builder.Configuration);
+// Add Appication and Infrastructure
+builder.Services
+    .AddApplication()
+    .AddInfrastructure(builder.Configuration);
 
 //Controller Invocation
 //Necessary Types to the Dependency Injection Container (so API can run using controllers.
