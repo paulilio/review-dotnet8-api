@@ -34,23 +34,25 @@ Each module represents a focused topic (e.g., DI, DTOs, FluentValidation, EF Cor
 ---
 
 ## Run & Test
-#### Run the API
+### Run the API
  ```bash
  dotnet run --project Restaurants.API
  ```
-#### Test (PowerShell):
+### Test 
+**On PowerShell**
 ```bash
-curl -s https://localhost:5001/api/restaurants | python -m json.tool
+curl -Uri http://localhost:5163/api/restaurants
 ```
-#### Test (Linux):
+**On Linux**
 ```bash
-sudo apt install jq
-curl -s https://localhost:5001/api/restaurants | jq
+curl -s http://localhost:5163/api/restaurants
 ```
 
-#### Check Response
+### Check Response
 - Status: 200 OK
 - Body: JSON list of restaurants from the database.
+
+---
 
 ## Final Project
 
