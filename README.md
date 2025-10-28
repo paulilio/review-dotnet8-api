@@ -14,12 +14,16 @@ Each module represents a focused topic (e.g., DI, DTOs, FluentValidation, EF Cor
 - DTOs and Entity mapping
 - FluentValidation for input validation
 - EF Core and database migrations
+- Dependency Injection (DI)
+- Logging and configuration
+- Clean Architecture layers (API, Application, Domain, Infrastructure)
+- Repository and Service patterns
 - Unit tests and integration tests (coming soon)
 - Middleware and exception handling (coming soon)
 
 ---
 
-## 🧱 Tech Stack
+## Tech Stack
 
 - .NET 8
 - ASP.NET Core Web API
@@ -29,7 +33,27 @@ Each module represents a focused topic (e.g., DI, DTOs, FluentValidation, EF Cor
 
 ---
 
+## Run & Test
+#### Run the API
+ ```bash
+ dotnet run --project Restaurants.API
+ ```
+#### Test (PowerShell):
+```bash
+curl -s https://localhost:5001/api/restaurants | python -m json.tool
+```
+#### Test (Linux):
+```bash
+sudo apt install jq
+curl -s https://localhost:5001/api/restaurants | jq
+```
+
+#### Check Response
+- Status: 200 OK
+- Body: JSON list of restaurants from the database.
+
 ## Final Project
 
-<img width="740" height="534" alt="image" src="https://github.com/user-attachments/assets/4a4e1196-bbf4-4886-ac25-608c167c3b3a" />
+<img width="783" height="540" alt="image" src="https://github.com/user-attachments/assets/f4e36218-f82b-4210-a1f5-f261ea002e8b" />
+
 
